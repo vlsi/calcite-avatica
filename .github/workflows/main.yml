@@ -25,4 +25,4 @@ jobs:
     - name: 'Test'
       shell: bash
       run: |
-        ./gradlew --no-parallel build -x distTar
+        ./mvnw -Dsurefire.useFile=false -Djavax.net.ssl.trustStorePassword=changeit -Dcom.ibm.jsse2.overrideDefaultTLS=true install
