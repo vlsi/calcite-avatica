@@ -23,14 +23,15 @@ plugins {
 dependencies {
     api(project(":core"))
     api(project(":metrics"))
-    api("org.slf4j:slf4j-api")
-    implementation("javax.servlet:javax.servlet-api")
-    implementation("com.google.guava:guava")
 
+    api("javax.servlet:javax.servlet-api")
     api("org.eclipse.jetty:jetty-http")
     api("org.eclipse.jetty:jetty-security")
     api("org.eclipse.jetty:jetty-server")
     api("org.eclipse.jetty:jetty-util")
+
+    implementation("org.slf4j:slf4j-api")
+    implementation("com.google.guava:guava")
 
     // TODO: AvaticaSuite includes AvaticaUtilsTest and ConnectStringParserTest from :core
     //   Does it really make sense?
