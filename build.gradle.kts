@@ -36,6 +36,7 @@ plugins {
     // Verification
     checkstyle
     id("com.github.autostyle")
+    id("com.github.ben-manes.versions")
     id("org.nosphere.apache.rat")
     id("com.github.spotbugs")
     id("de.thetaphi.forbiddenapis") apply false
